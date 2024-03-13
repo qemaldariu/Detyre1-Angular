@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./counter-component.component.css']
 })
 export class CounterComponentComponent {
+  counter=0;
+  Increment(event:Event){
+    this.counter++;
+  }
+  Decrement(event:Event){
+    this.counter--;
+  }
+  
 
 }

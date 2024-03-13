@@ -1,6 +1,24 @@
-<div class="container-fluid m-5">
+<div class="m-2 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+    <h1>Ushtrimi 2</h1><br>
 
+    <h4>Ju lutem vendosni nje tekst:</h4>
+    <input style="width: 30%; border: 5px solid black;"  type="text" class="form-control" 
 
-
+    [(ngModel)]="inputValue"
     
+    >
+<p style="font-size: 30px;">Teksti juaj eshte: {{inputValue}}</p>
+<button type="reset" class="btn btn-danger"
+
+[disabled]="!inputValue"
+(click)="resetInput($event)"
+>Reset</button>
 </div>
+
+<div class="m-5 p-3  bg-warning-subtle border border-warning-subtle rounded-5">
+<h1 style="text-align: center; font-size: 50px; color: blue; font-family: cursive;">Learning Angular...</h1>
+<img [src]="imgUrl" width="300px" style="  display: block;
+margin-left: auto;
+margin-right: auto;">
+  </div>
+

@@ -1,19 +1,23 @@
-<div class="container-fluid m-5">
+<div class="m-2 p-3 text-primary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3">
 
+<h1>Ushtrimi 1</h1><br>
 
+<button 
+class="btn btn-danger"
+(click)="Decrement($event)"
+>Decrement</button>
 <label
 style="font-size: 30px;
 margin-right: 40px;
+margin-left: 40px;
+font-weight: bold;
+
 color: blue;
 ">{{counter}}</label>
 
 <button 
 style="margin-right: 20px;"
-class="btn btn-primary"
+class="btn btn-success"
 (click)="Increment($event)"
 >Increment</button>
-<button 
-class="btn btn-primary"
-(click)="Decrement($event)"
->Decrement</button>
 </div>
